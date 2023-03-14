@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/api/createtask" method="post" style="text-align: center;">
+        <h1> Create Task</h1>
+        <label for="taskName" required>Name</label><br>
+        <input type="text" name="taskName" id="taskName"><br>
+        <label for="description">Description</label><br>
+        <textarea name="description" id="description" cols="30" rows="4"></textarea><br>
+        <label for="dueDate"> Due date</label><br>
+        <input type="date" name="dueDate" id="dueDate"><br>
+        <label for="period">Period</label><br>
+        <input type="number" name="period" id="period"><br>
+        <input type="checkbox" name="monthly" id="monthly" value="monthly">
+        <label for="monthly">Monthly</label><br>
+      
+        <input type="checkbox" name="quarterly" id="quarterly" value="quarterly">
+        <label for="quarterly">Quarterly</label><br>
+      
+        <input type="checkbox" name="yearly" id="yearly" value="yearly">
+        <label for="yearly">Yearly</label><br>
+        <label for="taskListId">List Id</label><br>
+        <input type="number" name="taskListId" id="taskListId"><br> <br>
+        <button type="submit" >Submit</button>
+
+    </form>
+</body>
+<script>
+</script>
+</html>
